@@ -30,12 +30,14 @@ public class GUITestProject extends Application {
 //                System.out.println("Hello World!");
 //            }
 //        });
-        
+   
+        //Lambda expression (does the same like the commented out stuff above)
         btn.setOnAction(event->
                 System.out.println("Hello world!"));
         
         
         StackPane root = new StackPane();
+        //Adding the only existing childnode to our root:
         root.getChildren().add(btn);
         
         Scene scene = new Scene(root, 300, 250);
@@ -48,6 +50,8 @@ public class GUITestProject extends Application {
     /**
      * @param args the command line arguments
      */
+    
+    // actually launches the programm
     public static void main(String[] args) {
         launch(args);
     }

@@ -15,6 +15,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
@@ -57,7 +58,8 @@ public class GUITestProject extends Application {
         grid.add(pw, 0, 2);
         grid.add(pwBox, 1, 2);
         
-        grid.setGridLinesVisible(true);
+        // only for develpment. Delete in final version.
+        //grid.setGridLinesVisible(true);
         
         Button btn = new Button("Sign in");
         HBox hbBtn = new HBox(10);
@@ -68,6 +70,7 @@ public class GUITestProject extends Application {
         final Text actiontarget = new Text();
         grid.add(actiontarget,1,6);
         
+        // Lamda expression
         btn.setOnAction(event ->
         {
             actiontarget.setFill(Color.FIREBRICK);

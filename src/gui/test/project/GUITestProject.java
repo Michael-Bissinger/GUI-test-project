@@ -23,7 +23,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Michael
+ * @author Michael: This is a login form
  */
 public class GUITestProject extends Application {
     
